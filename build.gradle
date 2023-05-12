@@ -30,6 +30,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'  // 자바 코드를 간소화하고 생산성을 높여주는 Lombok 라이브러리를 컴파일 시에만 사용합니다.
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'  // Spring Boot 개발 도구를 사용할 때 필요한 라이브러리를 가져옵니다.
 	
+	
+	
+	
+	
 	runtimeOnly 'com.h2database:h2:1.4.200'
 	runtimeOnly 'org.postgresql:postgresql' //PostgreSQL연결
 	annotationProcessor 'org.projectlombok:lombok'  // Lombok 
