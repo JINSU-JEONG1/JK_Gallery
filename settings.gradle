@@ -5,4 +5,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'JK-Gallery'
+rootProject.name = 'JK_Gallery'
