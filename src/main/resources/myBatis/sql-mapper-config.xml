@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    
+    <settings>
+      <setting name="cacheEnabled" value="true" />
+      <setting name="lazyLoadingEnabled" value="false" />
+      <setting name="multipleResultSetsEnabled" value="true" />
+      <setting name="useColumnLabel" value="true" />
+      <setting name="useGeneratedKeys" value="false" />
+      <setting name="defaultExecutorType" value="SIMPLE" />
+      <setting name="mapUnderscoreToCamelCase" value="true" />
+      <setting name="jdbcTypeForNull" value="VARCHAR" />
+    </settings>
+
+    <typeAliases>
+  		<typeAlias alias="camelMap" type="com.nd.owner.common.util.CamelMap"/>      
+    </typeAliases>
+
+    <typeHandlers>
+      	<typeHandler handler="com.nd.owner.common.util.ClobHandler" javaType="java.lang.Object" jdbcType="CLOB"/>
+    </typeHandlers>
+    
+</configuration>
