@@ -21,35 +21,12 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'  // Spring Web 애플리케이션을 개발할 때 필요한 라이브러리를 가져옵니다.
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'  // MyBatis 프레임워크를 Spring Boot 애플리케이션에서 사용할 때 필요한 라이브러리를 가져옵니다.
-	implementation 'org.springframework.boot:spring-boot-starter-aop'  // Spring AOP (Aspect Oriented Programming) 기능을 사용할 때 필요한 라이브러리를 가져옵니다.
-//	implementation 'org.springframework.boot:spring-boot-starter-validation'  // 데이터 검증 기능을 사용할 때 필요한 라이브러리를 가져옵니다.
-//	implementation 'org.springframework.boot:spring-boot-starter-security'  // Spring Security를 사용하여 보안 기능을 구현할 때 필요한 라이브러리를 가져옵니다.
-	
-	compileOnly 'org.projectlombok:lombok'  // 자바 코드를 간소화하고 생산성을 높여주는 Lombok 라이브러리를 컴파일 시에만 사용합니다.
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'  // Spring Boot 개발 도구를 사용할 때 필요한 라이브러리를 가져옵니다.
-	
-	
-	
-	
-	
-	runtimeOnly 'com.h2database:h2:1.4.200'
-	runtimeOnly 'org.postgresql:postgresql' //PostgreSQL연결
-	annotationProcessor 'org.projectlombok:lombok'  // Lombok 
-	implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.16'  // JDBC 드라이버를 로깅하기 위한 Log4jdbc-log4j2 라이브러리를 가져옵니다.
-	implementation group: 'org.slf4j', name: 'slf4j-api'  // 로그 라이브러리를 사용할 때 필요한 SLF4J API 라이브러리를 가져옵니다.
-	
-	//JSP 사용
-	implementation 'javax.servlet:jstl'  // JSP 페이지에서 JSTL (JSP Standard Tag Library) 기능을 사용하기 위한 라이브러리를 가져옵니다.
-	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"  // JSP 페이지를 컴파일하고 실행하기 위한 Tomcat Embed Jasper 라이브러리를 가져옵니다.
-	
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation('junit:junit:4.13')
-	
-	//jpa 사용
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    
 }
 
 tasks.named('test') {

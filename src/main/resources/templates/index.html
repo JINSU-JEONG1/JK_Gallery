@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script	src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	function testTXResultData(){
+		//ajax start
+		$.ajax({
+			url: '/board/test.api', //요청경로
+			type: 'post',
+	
+			success: function(result) {
+				
+				console.log(result);
+				
+			},
+			error: function() {
+				alert('실패');
+			}
+		});
+		//ajax end
+	}
+</script>
+
+
+
+	HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELOW
+	<br><br>
+	<button onclick="testTXResultData()">눌러줘</button>
+	
+	
+</body>
+</html>
